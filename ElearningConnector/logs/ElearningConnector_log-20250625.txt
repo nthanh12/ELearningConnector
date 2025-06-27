@@ -1,0 +1,250 @@
+2025-06-25 09:44:43.632 +07:00 [INF] User profile is available. Using 'C:\Users\thanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-25 09:44:43.809 +07:00 [INF] Start processing HTTP request GET https://localhost:7072/api/nhanvien/haschange?since=2025-06-25T02:39:43.6737572Z
+2025-06-25 09:44:43.812 +07:00 [INF] Sending HTTP request GET https://localhost:7072/api/nhanvien/haschange?since=2025-06-25T02:39:43.6737572Z
+2025-06-25 09:44:44.106 +07:00 [INF] Now listening on: https://localhost:7072
+2025-06-25 09:44:44.160 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-25 09:44:44.160 +07:00 [INF] Hosting environment: Development
+2025-06-25 09:44:44.161 +07:00 [INF] Content root path: C:\Users\thanh\source\repos\ElearningConnector\ElearningConnector
+2025-06-25 09:44:44.626 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7072/api/nhanvien/haschange?since=2025-06-25T02:39:43.6737572Z - null null
+2025-06-25 09:44:44.787 +07:00 [INF] 
+--- REQUEST ---
+Time: 2025-06-25 09:44:44
+Method: GET
+Path: /api/nhanvien/haschange
+Body: 
+
+2025-06-25 09:44:44.950 +07:00 [INF] Executing endpoint 'ElearningConnector.Controllers.NhanVienLogController.HasChange (ElearningConnector)'
+2025-06-25 09:44:44.969 +07:00 [INF] Route matched with {action = "HasChange", controller = "NhanVienLog"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HasChange(System.DateTime) on controller ElearningConnector.Controllers.NhanVienLogController (ElearningConnector).
+2025-06-25 09:44:45.245 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/index.html - null null
+2025-06-25 09:44:45.838 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 504.0696 ms
+2025-06-25 09:44:45.844 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/index.html - 200 null text/html;charset=utf-8 598.5232ms
+2025-06-25 09:44:45.917 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-25 09:44:45.918 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/index.js - null null
+2025-06-25 09:44:45.918 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/_vs/browserLink - null null
+2025-06-25 09:44:45.926 +07:00 [INF] HTTP GET /swagger/index.js responded 200 in 3.6930 ms
+2025-06-25 09:44:45.927 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/index.js - 200 null application/javascript;charset=utf-8 9.5531ms
+2025-06-25 09:44:45.956 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/_framework/aspnetcore-browser-refresh.js - 200 13788 application/javascript; charset=utf-8 39.7692ms
+2025-06-25 09:44:46.029 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/_vs/browserLink - 200 null text/javascript; charset=UTF-8 111.2606ms
+2025-06-25 09:44:46.140 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/v1/swagger.json - null null
+2025-06-25 09:44:46.155 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 14.3432 ms
+2025-06-25 09:44:46.157 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.1404ms
+2025-06-25 09:44:48.136 +07:00 [INF] Executed DbCommand (234ms) [Parameters=[@__sinceLocal_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [HSNV_LichSuNhanVien] AS [h]
+        WHERE [h].[NgayThayDoi] > @__sinceLocal_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-06-25 09:44:48.180 +07:00 [INF] Executing OkObjectResult, writing value of type 'ElearningConnector.Models.Common.ApiResponse`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-25 09:44:48.195 +07:00 [INF] Executed action ElearningConnector.Controllers.NhanVienLogController.HasChange (ElearningConnector) in 3222.3613ms
+2025-06-25 09:44:48.195 +07:00 [INF] Executed endpoint 'ElearningConnector.Controllers.NhanVienLogController.HasChange (ElearningConnector)'
+2025-06-25 09:44:48.195 +07:00 [INF] 
+--- RESPONSE ---
+Time: 2025-06-25 09:44:48
+StatusCode: 200
+Body: {"code":"0000","message":"Thành công","result":false}
+-----------------
+
+2025-06-25 09:44:48.199 +07:00 [INF] HTTP GET /api/nhanvien/haschange responded 200 in 3521.5194 ms
+2025-06-25 09:44:48.205 +07:00 [INF] Received HTTP response headers after 4388.589ms - 200
+2025-06-25 09:44:48.206 +07:00 [INF] End processing HTTP request after 4400.7579ms - 200
+2025-06-25 09:44:48.224 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7072/api/nhanvien/haschange?since=2025-06-25T02:39:43.6737572Z - 200 null application/json; charset=utf-8 3611.1742ms
+2025-06-25 09:44:48.347 +07:00 [INF] [NhanVienChangeChecker] Không có thay đổi nhân viên kể từ 2025-06-25T02:39:43.6737572Z.
+2025-06-25 09:44:55.983 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7072/api/danhsachcanbo - application/json 80
+2025-06-25 09:44:55.991 +07:00 [INF] 
+--- REQUEST ---
+Time: 2025-06-25 09:44:55
+Method: POST
+Path: /api/danhsachcanbo
+Body:      {
+       "page": 1,
+       "pageSize": 10,
+       "keywords": ""
+     }
+
+2025-06-25 09:44:56.142 +07:00 [INF] Executing endpoint 'CanBoController.Post (ElearningConnector)'
+2025-06-25 09:44:56.157 +07:00 [INF] Route matched with {action = "Post", controller = "CanBo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(ElearningConnector.Models.Requests.PagedRequest) on controller CanBoController (ElearningConnector).
+2025-06-25 09:45:02.381 +07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-06-25 09:45:02.381 +07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-06-25 09:45:02.651 +07:00 [INF] Executed DbCommand (240ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[Id], [n].[DMBoPhanID], [n].[DMChucDanhID], [n].[TenDayDu], [n].[SoCMND], [n].[NgayCapCMND], [n].[NoiCapCMND], [n].[NgaySinh], [n].[Email], [n].[HoKhauThuongTru], [n].[NoiOHienTai], [n].[DienThoaiDiDong], [n].[DienThoaiNhaRieng], [n].[DienThoaiLamViec], CASE
+    WHEN [n].[NghiViec] = CAST(0 AS bit) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END AS [TrangThaiCongTac]
+FROM [NhanVien] AS [n]
+INNER JOIN [DMBoPhan] AS [d] ON [n].[DMBoPhanID] = [d].[Id]
+INNER JOIN [DMChucDanh] AS [d0] ON [n].[DMChucDanhID] = [d0].[Id]
+INNER JOIN [User] AS [u] ON [n].[Id] = [u].[PK_UserID]
+WHERE [n].[NghiViec] = CAST(0 AS bit)
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-06-25 09:45:02.671 +07:00 [INF] Executing OkObjectResult, writing value of type 'ElearningConnector.Models.Common.ApiResponse`1[[System.Collections.Generic.List`1[[ElearningConnector.Models.DTOs.NhanVienDto, ElearningConnector, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-25 09:45:02.689 +07:00 [INF] Executed action CanBoController.Post (ElearningConnector) in 6531.6574ms
+2025-06-25 09:45:02.690 +07:00 [INF] Executed endpoint 'CanBoController.Post (ElearningConnector)'
+2025-06-25 09:45:02.691 +07:00 [INF] 
+--- RESPONSE ---
+Time: 2025-06-25 09:45:02
+StatusCode: 200
+Body: {"code":"0000","message":"Thành công","result":[{"id":5,"dmBoPhanID":1,"dmChucDanhID":257,"tenDayDu":"Lê Tiến Thịnh","soCMND":"001075015957","ngayCapCMND":"2017-08-25T00:00:00","noiCapCMND":"Cục Cảnh sát ĐKQL cư trú và DLQG về dân cư","ngaySinh":"1975-12-02T00:00:00","email":"letienthinh@attech.com.vn","hoKhauThuongTru":"17 ngõ 29, Thụy Khuê, Tây Hồ, Hà Nội","noiOHienTai":"Số 74, lô A, Nhà vườn, Khu đô thị Việt Hưng, phường Giang Biên, quận Long Biên, thành phố Hà Nội","dienThoaiDiDong":"","dienThoaiNhaRieng":"","dienThoaiLamViec":"","trangThaiCongTac":true},{"id":8,"dmBoPhanID":37,"dmChucDanhID":174,"tenDayDu":"Trần Thị Phương Loan 12","soCMND":"013188117","ngayCapCMND":"2009-11-05T00:00:00","noiCapCMND":"Công an Thành phố Hà Nội","ngaySinh":"1981-06-05T00:00:00","email":"phuongloan@attech.com.vn","hoKhauThuongTru":"Tổ 30,phường Bồ Đề. Long Biên, Hà Nội","noiOHienTai":"Phòng 0313, Chung cư Berriver, 390 Nguyễn văn cừ, phuờng Bồ Đề, Long Biên, Hà Nội","dienThoaiDiDong":"0985268867","dienThoaiNhaRieng":"","dienThoaiLamViec":"","trangThaiCongTac":true},{"id":9,"dmBoPhanID":37,"dmChucDanhID":175,"tenDayDu":"Nguyễn Thị Thu Hoài","soCMND":"012230260","ngayCapCMND":"1999-04-30T00:00:00","noiCapCMND":"Công an Thành phố Hà Nội","ngaySinh":"1984-09-16T00:00:00","email":"hoaintt@attech.com.vn","hoKhauThuongTru":"52 Hàng Bún, phuờng Quán Thánh, Ba Đình, Hà Nội","noiOHienTai":"52 Hàng Bún, phuờng Quán Thánh, Ba Đình, Hà Nội","dienThoaiDiDong":"0982143884","dienThoaiNhaRieng":"","dienThoaiLamViec":"","trangThaiCongTac":true},{"id":10,"dmBoPhanID":37,"dmChucDanhID":6,"tenDayDu":"Phạm Thị Hà","soCMND":"030185008663","ngayCapCMND":"2018-04-20T00:00:00","noiCapCMND":"Cục cảnh sát ĐKQL cư trú và DLQG về dân cư","ngaySinh":"1985-03-10T00:00:00","email":"thuha@attech.com.vn","hoKhauThuongTru":"thôn 284, xã Quế Nham, huyện Tân Yên, tỉnh Bắc Giang","noiOHienTai":"","dienThoaiDiDong":"0979422682","dienThoaiNhaRieng":"","dienThoaiLamViec":"","trangThaiCongTac":true},{"id":11,"dmBoPhanID":37,"dmChucDanhID":7,"tenDayDu":"Hoàng Thanh Trang","soCMND":"001178041677","ngayCapCMND":"2021-07-10T00:00:00","noiCapCMND":"Cục cảnh sát QLHC về TTXH","ngaySinh":"1978-04-19T00:00:00","email":"tranght@attech.com.vn","hoKhauThuongTru":"4B Ngõ 67 Lý Thuờng Kiệt, Hoàn Kiếm, Hà Nội","noiOHienTai":"4B Ngõ 67 Lý Thuờng Kiệt, Hoàn Kiếm, Hà Nội","dienThoaiDiDong":"0904109727","dienThoaiNhaRieng":"","dienThoaiLamViec":"","trangThaiCongTac":true},{"id":12,"dmBoPhanID":37,"dmChucDanhID":5,"tenDayDu":"Phạm Thị Thu Hường","soCMND":"012739352","ngayCapCMND":"2004-09-01T00:00:00","noiCapCMND":"Công an Thành phố Hà Nội","ngaySinh":"1987-08-09T00:00:00","email":"huongptt@attech.com.vn","hoKhauThuongTru":"14/196 Nguyễn Sơn, Long Biên, Hà Nội","noiOHienTai":"","dienThoaiDiDong":"0983988720","dienThoaiNhaRieng":"","dienThoaiLamViec":"","trangThaiCongTac":true},{"id":13,"dmBoPhanID":37,"dmChucDanhID":6,"tenDayDu":"Nguyễn Thị Hương Giang","soCMND":"031208943","ngayCapCMND":"1999-07-21T00:00:00","noiCapCMND":"Công an Thành phố Hải Phòng","ngaySinh":"1984-11-02T00:00:00","email":"giangnth@attech.com.vn","hoKhauThuongTru":"Số 12/117/18 Nguyễn Sơn, Gia Thụy, Long Biên, Hà Nội","noiOHienTai":"Số 12/117/18 Nguyễn Sơn, Gia Thụy, Long Biên, Hà Nội","dienThoaiDiDong":"0942988188","dienThoaiNhaRieng":"","dienThoaiLamViec":"","trangThaiCongTac":true},{"id":14,"dmBoPhanID":37,"dmChucDanhID":175,"tenDayDu":"Chu Thị Phương Loan","soCMND":"012139683","ngayCapCMND":"2010-04-29T00:00:00","noiCapCMND":"Công an Thành phố Hà Nội","ngaySinh":"1980-03-12T00:00:00","email":"loanctp@attech.com.vn","hoKhauThuongTru":"Số 2, ngách 109/73 Nguyễn Sơn, Gia Thụy, Long Biên, Hà Nội","noiOHienTai":"Số 2, ngách 109/73 Nguyễn Sơn, Gia Thụy, Long Biên, Hà Nội","dienThoaiDiDong":"0982019198","dienThoaiNhaRieng":"","dienThoaiLamViec":"","trangThaiCongTac":true},{"id":17,"dmBoPhanID":9,"dmChucDanhID":194,"tenDayDu":"Nguyễn  Hoàng","soCMND":"012457550","ngayCapCMND":"2010-04-03T00:00:00","noiCapCMND":"Công an Thành phố Hà Nội","ngaySinh":"1968-07-21T00:00:00","email":"hoangnguyen@attech.com.vn","hoKhauThuongTru":"Số 1, Hàng Đậu, Đồng Xuân, Hoàn Kiếm, Hà Nội","noiOHienTai":"Số 1, Hàng Đậu, Đồng Xuân, Hoàn Kiếm, Hà Nội","dienThoaiDiDong":"","dienThoaiNhaRieng":"","dienThoaiLamViec":"","trangThaiCongTac":true},{"id":20,"dmBoPhanID":2,"dmChucDanhID":201,"tenDayDu":"Nguyễn Thị Hường","soCMND":"013499313","ngayCapCMND":"2012-02-17T00:00:00","noiCapCMND":"Công an Thành phố Hà Nội","ngaySinh":"1979-08-17T00:00:00","email":"huongnt@attech.com.vn","hoKhauThuongTru":"Số 10B, Hẻm 200/10/3, Nguyễn Sơn, Tổ 22, Bồ Đề, Long Biên, Hà nội","noiOHienTai":"Số 10B, Hẻm 200/10/3, Nguyễn Sơn, Tổ 22, Bồ Đề, Long Biên, Hà nội","dienThoaiDiDong":"0912063234","dienThoaiNhaRieng":"","dienThoaiLamViec":"","trangThaiCongTac":true}]}
+-----------------
+
+2025-06-25 09:45:02.692 +07:00 [INF] HTTP POST /api/danhsachcanbo responded 200 in 6705.1682 ms
+2025-06-25 09:45:02.693 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7072/api/danhsachcanbo - 200 null application/json; charset=utf-8 6709.9564ms
+2025-06-25 15:10:37.422 +07:00 [INF] User profile is available. Using 'C:\Users\thanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-25 15:10:37.834 +07:00 [INF] Start processing HTTP request GET https://localhost:7072/api/nhanvien/haschange?since=2025-06-25T08:05:37.4663885Z
+2025-06-25 15:10:37.838 +07:00 [INF] Sending HTTP request GET https://localhost:7072/api/nhanvien/haschange?since=2025-06-25T08:05:37.4663885Z
+2025-06-25 15:10:38.190 +07:00 [INF] Now listening on: https://localhost:7072
+2025-06-25 15:10:38.243 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-25 15:10:38.243 +07:00 [INF] Hosting environment: Development
+2025-06-25 15:10:38.243 +07:00 [INF] Content root path: C:\Users\thanh\source\repos\ElearningConnector\ElearningConnector
+2025-06-25 15:10:38.610 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7072/api/nhanvien/haschange?since=2025-06-25T08:05:37.4663885Z - null null
+2025-06-25 15:10:38.695 +07:00 [INF] 
+--- REQUEST ---
+Time: 2025-06-25 15:10:38
+Method: GET
+Path: /api/nhanvien/haschange
+Body: 
+
+2025-06-25 15:10:38.818 +07:00 [INF] Executing endpoint 'ElearningConnector.Controllers.NhanVienLogController.HasChange (ElearningConnector)'
+2025-06-25 15:10:38.842 +07:00 [INF] Route matched with {action = "HasChange", controller = "NhanVienLog"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HasChange(System.DateTime) on controller ElearningConnector.Controllers.NhanVienLogController (ElearningConnector).
+2025-06-25 15:10:41.053 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/index.html - null null
+2025-06-25 15:10:41.294 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 93.1648 ms
+2025-06-25 15:10:41.301 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/index.html - 200 null text/html;charset=utf-8 249.8205ms
+2025-06-25 15:10:41.487 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/index.js - null null
+2025-06-25 15:10:41.487 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-25 15:10:41.487 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/_vs/browserLink - null null
+2025-06-25 15:10:41.492 +07:00 [INF] HTTP GET /swagger/index.js responded 200 in 4.6529 ms
+2025-06-25 15:10:41.493 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/index.js - 200 null application/javascript;charset=utf-8 6.5338ms
+2025-06-25 15:10:41.574 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/_framework/aspnetcore-browser-refresh.js - 200 13788 application/javascript; charset=utf-8 87.3212ms
+2025-06-25 15:10:41.783 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/_vs/browserLink - 200 null text/javascript; charset=UTF-8 296.777ms
+2025-06-25 15:10:42.102 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/v1/swagger.json - null null
+2025-06-25 15:10:42.135 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 32.6984 ms
+2025-06-25 15:10:42.137 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 35.9201ms
+2025-06-25 15:10:42.949 +07:00 [INF] Executed DbCommand (520ms) [Parameters=[@__sinceLocal_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [HSNV_LichSuNhanVien] AS [h]
+        WHERE [h].[NgayThayDoi] > @__sinceLocal_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-06-25 15:10:43.000 +07:00 [INF] Executing OkObjectResult, writing value of type 'ElearningConnector.Models.Common.ApiResponse`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-25 15:10:43.021 +07:00 [INF] Executed action ElearningConnector.Controllers.NhanVienLogController.HasChange (ElearningConnector) in 4174.3972ms
+2025-06-25 15:10:43.021 +07:00 [INF] Executed endpoint 'ElearningConnector.Controllers.NhanVienLogController.HasChange (ElearningConnector)'
+2025-06-25 15:10:43.022 +07:00 [INF] 
+--- RESPONSE ---
+Time: 2025-06-25 15:10:43
+StatusCode: 200
+Body: {"code":"0000","message":"Thành công","result":false}
+-----------------
+
+2025-06-25 15:10:43.024 +07:00 [INF] HTTP GET /api/nhanvien/haschange responded 200 in 4370.4158 ms
+2025-06-25 15:10:43.030 +07:00 [INF] Received HTTP response headers after 5187.3877ms - 200
+2025-06-25 15:10:43.031 +07:00 [INF] End processing HTTP request after 5202.0907ms - 200
+2025-06-25 15:10:43.051 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7072/api/nhanvien/haschange?since=2025-06-25T08:05:37.4663885Z - 200 null application/json; charset=utf-8 4455.393ms
+2025-06-25 15:10:43.179 +07:00 [INF] [NhanVienChangeChecker] Không có thay đổi nhân viên kể từ 2025-06-25T08:05:37.4663885Z.
+2025-06-25 15:10:50.656 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7072/api/authen - application/json 54
+2025-06-25 15:10:50.698 +07:00 [INF] 
+--- REQUEST ---
+Time: 2025-06-25 15:10:50
+Method: POST
+Path: /api/authen
+Body: {
+  "username": "admin",
+  "password": "thanh123"
+}
+
+2025-06-25 15:10:50.714 +07:00 [INF] Executing endpoint 'AuthController.Post (ElearningConnector)'
+2025-06-25 15:10:50.762 +07:00 [INF] Route matched with {action = "Post", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(ElearningConnector.Models.Common.AuthRequest) on controller AuthController (ElearningConnector).
+2025-06-25 15:10:56.269 +07:00 [INF] Executed DbCommand (494ms) [Parameters=[@__8__locals1_request_UserName_0='?' (Size = 4000), @__hashedPassword_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[PK_UserID], [u].[FullName], [u].[Password], [u].[UserName], [u].[UserType], [u].[isOnline]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__8__locals1_request_UserName_0 AND [u].[Password] = @__hashedPassword_1
+2025-06-25 15:10:56.692 +07:00 [INF] Executing OkObjectResult, writing value of type 'ElearningConnector.Models.Common.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-25 15:10:56.702 +07:00 [INF] Executed action AuthController.Post (ElearningConnector) in 5939.4653ms
+2025-06-25 15:10:56.706 +07:00 [INF] Executed endpoint 'AuthController.Post (ElearningConnector)'
+2025-06-25 15:10:56.710 +07:00 [INF] 
+--- RESPONSE ---
+Time: 2025-06-25 15:10:56
+StatusCode: 200
+Body: {"code":"0000","message":"Đăng nhập thành công","result":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJVc2VySWQiOiIxIiwiVXNlclR5cGUiOiIxIiwiZXhwIjoxNzUwODQ2MjU2LCJpc3MiOiJFbGVhcm5pbmdDb25uZWN0b3IiLCJhdWQiOiJFbGVhcm5pbmdDb25uZWN0b3JVc2VycyJ9.iBODIjMAxrvUJNw_kg6MVm2_SFvgUU2DtJidKNH7WV4"}
+-----------------
+
+2025-06-25 15:10:56.716 +07:00 [INF] HTTP POST /api/authen responded 200 in 6035.2222 ms
+2025-06-25 15:10:56.721 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7072/api/authen - 200 null application/json; charset=utf-8 6067.5033ms
+2025-06-25 15:11:19.424 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7072/api/danhsachcanbo - application/json 80
+2025-06-25 15:11:19.480 +07:00 [INF] 
+--- REQUEST ---
+Time: 2025-06-25 15:11:19
+Method: POST
+Path: /api/danhsachcanbo
+Body:      {
+       "page": 1,
+       "pageSize": 10,
+       "keywords": ""
+     }
+
+2025-06-25 15:11:19.785 +07:00 [INF] Executing endpoint 'CanBoController.Post (ElearningConnector)'
+2025-06-25 15:11:19.874 +07:00 [INF] Route matched with {action = "Post", controller = "CanBo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(ElearningConnector.Models.Requests.PagedRequest) on controller CanBoController (ElearningConnector).
+2025-06-25 15:11:22.675 +07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-06-25 15:11:22.677 +07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-06-25 15:11:23.041 +07:00 [INF] Executed DbCommand (312ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[Id], [n].[DMBoPhanID], [n].[DMChucDanhID], [n].[TenDayDu], [n].[SoCMND], [n].[NgayCapCMND], [n].[NoiCapCMND], [n].[NgaySinh], [n].[Email], [n].[HoKhauThuongTru], [n].[NoiOHienTai], [n].[DienThoaiDiDong], [n].[DienThoaiNhaRieng], [n].[DienThoaiLamViec], CASE
+    WHEN [n].[NghiViec] = CAST(0 AS bit) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END AS [TrangThaiCongTac]
+FROM [NhanVien] AS [n]
+INNER JOIN [DMBoPhan] AS [d] ON [n].[DMBoPhanID] = [d].[Id]
+INNER JOIN [DMChucDanh] AS [d0] ON [n].[DMChucDanhID] = [d0].[Id]
+INNER JOIN [User] AS [u] ON [n].[Id] = [u].[PK_UserID]
+WHERE [n].[NghiViec] = CAST(0 AS bit)
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-06-25 15:11:23.065 +07:00 [INF] Executing OkObjectResult, writing value of type 'ElearningConnector.Models.Common.ApiResponse`1[[System.Collections.Generic.List`1[[ElearningConnector.Models.DTOs.NhanVienDto, ElearningConnector, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-25 15:11:23.104 +07:00 [INF] Executed action CanBoController.Post (ElearningConnector) in 3228.7315ms
+2025-06-25 15:11:23.104 +07:00 [INF] Executed endpoint 'CanBoController.Post (ElearningConnector)'
+2025-06-25 15:11:23.104 +07:00 [INF] 
+--- RESPONSE ---
+Time: 2025-06-25 15:11:23
+StatusCode: 200
+Body: {"code":"0000","message":"Thành công","result":[{"id":5,"dmBoPhanID":1,"dmChucDanhID":257,"tenDayDu":"Lê Tiến Thịnh","soCMND":"001075015957","ngayCapCMND":"2017-08-25T00:00:00","noiCapCMND":"Cục Cảnh sát ĐKQL cư trú và DLQG về dân cư","ngaySinh":"1975-12-02T00:00:00","email":"letienthinh@attech.com.vn","hoKhauThuongTru":"17 ngõ 29, Thụy Khuê, Tây Hồ, Hà Nội","noiOHienTai":"Số 74, lô A, Nhà vườn, Khu đô thị Việt Hưng, phường Giang Biên, quận Long Biên, thành phố Hà Nội","dienThoaiDiDong":"","dienThoaiNhaRieng":"","dienThoaiLamViec":"","trangThaiCongTac":true},{"id":8,"dmBoPhanID":37,"dmChucDanhID":174,"tenDayDu":"Trần Thị Phương Loan 12","soCMND":"013188117","ngayCapCMND":"2009-11-05T00:00:00","noiCapCMND":"Công an Thành phố Hà Nội","ngaySinh":"1981-06-05T00:00:00","email":"phuongloan@attech.com.vn","hoKhauThuongTru":"Tổ 30,phường Bồ Đề. Long Biên, Hà Nội","noiOHienTai":"Phòng 0313, Chung cư Berriver, 390 Nguyễn văn cừ, phuờng Bồ Đề, Long Biên, Hà Nội","dienThoaiDiDong":"0985268867","dienThoaiNhaRieng":"","dienThoaiLamViec":"","trangThaiCongTac":true},{"id":9,"dmBoPhanID":37,"dmChucDanhID":175,"tenDayDu":"Nguyễn Thị Thu Hoài","soCMND":"012230260","ngayCapCMND":"1999-04-30T00:00:00","noiCapCMND":"Công an Thành phố Hà Nội","ngaySinh":"1984-09-16T00:00:00","email":"hoaintt@attech.com.vn","hoKhauThuongTru":"52 Hàng Bún, phuờng Quán Thánh, Ba Đình, Hà Nội","noiOHienTai":"52 Hàng Bún, phuờng Quán Thánh, Ba Đình, Hà Nội","dienThoaiDiDong":"0982143884","dienThoaiNhaRieng":"","dienThoaiLamViec":"","trangThaiCongTac":true},{"id":10,"dmBoPhanID":37,"dmChucDanhID":6,"tenDayDu":"Phạm Thị Hà","soCMND":"030185008663","ngayCapCMND":"2018-04-20T00:00:00","noiCapCMND":"Cục cảnh sát ĐKQL cư trú và DLQG về dân cư","ngaySinh":"1985-03-10T00:00:00","email":"thuha@attech.com.vn","hoKhauThuongTru":"thôn 284, xã Quế Nham, huyện Tân Yên, tỉnh Bắc Giang","noiOHienTai":"","dienThoaiDiDong":"0979422682","dienThoaiNhaRieng":"","dienThoaiLamViec":"","trangThaiCongTac":true},{"id":11,"dmBoPhanID":37,"dmChucDanhID":7,"tenDayDu":"Hoàng Thanh Trang","soCMND":"001178041677","ngayCapCMND":"2021-07-10T00:00:00","noiCapCMND":"Cục cảnh sát QLHC về TTXH","ngaySinh":"1978-04-19T00:00:00","email":"tranght@attech.com.vn","hoKhauThuongTru":"4B Ngõ 67 Lý Thuờng Kiệt, Hoàn Kiếm, Hà Nội","noiOHienTai":"4B Ngõ 67 Lý Thuờng Kiệt, Hoàn Kiếm, Hà Nội","dienThoaiDiDong":"0904109727","dienThoaiNhaRieng":"","dienThoaiLamViec":"","trangThaiCongTac":true},{"id":12,"dmBoPhanID":37,"dmChucDanhID":5,"tenDayDu":"Phạm Thị Thu Hường","soCMND":"012739352","ngayCapCMND":"2004-09-01T00:00:00","noiCapCMND":"Công an Thành phố Hà Nội","ngaySinh":"1987-08-09T00:00:00","email":"huongptt@attech.com.vn","hoKhauThuongTru":"14/196 Nguyễn Sơn, Long Biên, Hà Nội","noiOHienTai":"","dienThoaiDiDong":"0983988720","dienThoaiNhaRieng":"","dienThoaiLamViec":"","trangThaiCongTac":true},{"id":13,"dmBoPhanID":37,"dmChucDanhID":6,"tenDayDu":"Nguyễn Thị Hương Giang","soCMND":"031208943","ngayCapCMND":"1999-07-21T00:00:00","noiCapCMND":"Công an Thành phố Hải Phòng","ngaySinh":"1984-11-02T00:00:00","email":"giangnth@attech.com.vn","hoKhauThuongTru":"Số 12/117/18 Nguyễn Sơn, Gia Thụy, Long Biên, Hà Nội","noiOHienTai":"Số 12/117/18 Nguyễn Sơn, Gia Thụy, Long Biên, Hà Nội","dienThoaiDiDong":"0942988188","dienThoaiNhaRieng":"","dienThoaiLamViec":"","trangThaiCongTac":true},{"id":14,"dmBoPhanID":37,"dmChucDanhID":175,"tenDayDu":"Chu Thị Phương Loan","soCMND":"012139683","ngayCapCMND":"2010-04-29T00:00:00","noiCapCMND":"Công an Thành phố Hà Nội","ngaySinh":"1980-03-12T00:00:00","email":"loanctp@attech.com.vn","hoKhauThuongTru":"Số 2, ngách 109/73 Nguyễn Sơn, Gia Thụy, Long Biên, Hà Nội","noiOHienTai":"Số 2, ngách 109/73 Nguyễn Sơn, Gia Thụy, Long Biên, Hà Nội","dienThoaiDiDong":"0982019198","dienThoaiNhaRieng":"","dienThoaiLamViec":"","trangThaiCongTac":true},{"id":17,"dmBoPhanID":9,"dmChucDanhID":194,"tenDayDu":"Nguyễn  Hoàng","soCMND":"012457550","ngayCapCMND":"2010-04-03T00:00:00","noiCapCMND":"Công an Thành phố Hà Nội","ngaySinh":"1968-07-21T00:00:00","email":"hoangnguyen@attech.com.vn","hoKhauThuongTru":"Số 1, Hàng Đậu, Đồng Xuân, Hoàn Kiếm, Hà Nội","noiOHienTai":"Số 1, Hàng Đậu, Đồng Xuân, Hoàn Kiếm, Hà Nội","dienThoaiDiDong":"","dienThoaiNhaRieng":"","dienThoaiLamViec":"","trangThaiCongTac":true},{"id":20,"dmBoPhanID":2,"dmChucDanhID":201,"tenDayDu":"Nguyễn Thị Hường","soCMND":"013499313","ngayCapCMND":"2012-02-17T00:00:00","noiCapCMND":"Công an Thành phố Hà Nội","ngaySinh":"1979-08-17T00:00:00","email":"huongnt@attech.com.vn","hoKhauThuongTru":"Số 10B, Hẻm 200/10/3, Nguyễn Sơn, Tổ 22, Bồ Đề, Long Biên, Hà nội","noiOHienTai":"Số 10B, Hẻm 200/10/3, Nguyễn Sơn, Tổ 22, Bồ Đề, Long Biên, Hà nội","dienThoaiDiDong":"0912063234","dienThoaiNhaRieng":"","dienThoaiLamViec":"","trangThaiCongTac":true}]}
+-----------------
+
+2025-06-25 15:11:23.109 +07:00 [INF] HTTP POST /api/danhsachcanbo responded 200 in 3641.1805 ms
+2025-06-25 15:11:23.111 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7072/api/danhsachcanbo - 200 null application/json; charset=utf-8 3706.1926ms
+2025-06-25 15:15:43.352 +07:00 [INF] Start processing HTTP request GET https://localhost:7072/api/nhanvien/haschange?since=2025-06-25T08:10:43.1791685Z
+2025-06-25 15:15:43.368 +07:00 [INF] Sending HTTP request GET https://localhost:7072/api/nhanvien/haschange?since=2025-06-25T08:10:43.1791685Z
+2025-06-25 15:15:43.571 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7072/api/nhanvien/haschange?since=2025-06-25T08:10:43.1791685Z - null null
+2025-06-25 15:15:43.610 +07:00 [INF] 
+--- REQUEST ---
+Time: 2025-06-25 15:15:43
+Method: GET
+Path: /api/nhanvien/haschange
+Body: 
+
+2025-06-25 15:15:43.671 +07:00 [INF] Executing endpoint 'ElearningConnector.Controllers.NhanVienLogController.HasChange (ElearningConnector)'
+2025-06-25 15:15:43.696 +07:00 [INF] Route matched with {action = "HasChange", controller = "NhanVienLog"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HasChange(System.DateTime) on controller ElearningConnector.Controllers.NhanVienLogController (ElearningConnector).
+2025-06-25 15:15:43.892 +07:00 [INF] Executed DbCommand (25ms) [Parameters=[@__sinceLocal_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [HSNV_LichSuNhanVien] AS [h]
+        WHERE [h].[NgayThayDoi] > @__sinceLocal_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-06-25 15:15:43.901 +07:00 [INF] Executing OkObjectResult, writing value of type 'ElearningConnector.Models.Common.ApiResponse`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-25 15:15:43.910 +07:00 [INF] Executed action ElearningConnector.Controllers.NhanVienLogController.HasChange (ElearningConnector) in 212.3214ms
+2025-06-25 15:15:43.910 +07:00 [INF] Executed endpoint 'ElearningConnector.Controllers.NhanVienLogController.HasChange (ElearningConnector)'
+2025-06-25 15:15:43.911 +07:00 [INF] 
+--- RESPONSE ---
+Time: 2025-06-25 15:15:43
+StatusCode: 200
+Body: {"code":"0000","message":"Thành công","result":true}
+-----------------
+
+2025-06-25 15:15:43.914 +07:00 [INF] HTTP GET /api/nhanvien/haschange responded 200 in 325.6217 ms
+2025-06-25 15:15:43.915 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7072/api/nhanvien/haschange?since=2025-06-25T08:10:43.1791685Z - 200 null application/json; charset=utf-8 352.9767ms
+2025-06-25 15:15:43.918 +07:00 [INF] Received HTTP response headers after 547.5496ms - 200
+2025-06-25 15:15:43.918 +07:00 [INF] End processing HTTP request after 574.5662ms - 200
+2025-06-25 15:15:43.941 +07:00 [INF] [NhanVienChangeChecker] Đã gửi thông báo thành công lúc 06/25/2025 8:15:43 SA

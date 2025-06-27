@@ -1,0 +1,501 @@
+2025-06-24 23:28:09.340 +07:00 [INF] User profile is available. Using 'C:\Users\thanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-24 23:28:09.464 +07:00 [INF] Creating key {d1d6f8ef-30d2-4d77-97fe-4199081d3bb0} with creation date 2025-06-24 16:28:09Z, activation date 2025-06-24 16:28:09Z, and expiration date 2025-09-22 16:28:09Z.
+2025-06-24 23:28:09.474 +07:00 [INF] Writing data to file 'C:\Users\thanh\AppData\Local\ASP.NET\DataProtection-Keys\key-d1d6f8ef-30d2-4d77-97fe-4199081d3bb0.xml'.
+2025-06-24 23:28:09.722 +07:00 [INF] Now listening on: https://localhost:7072
+2025-06-24 23:28:09.774 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-24 23:28:09.774 +07:00 [INF] Hosting environment: Development
+2025-06-24 23:28:09.774 +07:00 [INF] Content root path: C:\Users\thanh\source\repos\ElearningConnector\ElearningConnector
+2025-06-24 23:28:11.999 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/index.html - null null
+2025-06-24 23:28:12.195 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 46.7321 ms
+2025-06-24 23:28:12.198 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/index.html - 200 null text/html;charset=utf-8 201.4567ms
+2025-06-24 23:28:12.299 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/index.js - null null
+2025-06-24 23:28:12.299 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-24 23:28:12.299 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/_vs/browserLink - null null
+2025-06-24 23:28:12.304 +07:00 [INF] HTTP GET /swagger/index.js responded 200 in 3.6238 ms
+2025-06-24 23:28:12.304 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/index.js - 200 null application/javascript;charset=utf-8 5.1679ms
+2025-06-24 23:28:12.311 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/_framework/aspnetcore-browser-refresh.js - 200 13788 application/javascript; charset=utf-8 12.171ms
+2025-06-24 23:28:12.373 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/_vs/browserLink - 200 null text/javascript; charset=UTF-8 73.8325ms
+2025-06-24 23:28:12.560 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/v1/swagger.json - null null
+2025-06-24 23:28:12.569 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 8.6233 ms
+2025-06-24 23:28:12.569 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.1082ms
+2025-06-24 23:28:22.223 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7072/api/authen - application/json 50
+2025-06-24 23:28:22.240 +07:00 [INF] 
+--- REQUEST ---
+Time: 2025-06-24 23:28:22
+Method: POST
+Path: /api/authen
+Body: {
+  "userName": "string",
+  "passWord": "string"
+}
+
+2025-06-24 23:28:22.299 +07:00 [INF] Executing endpoint 'AuthController.Post (ElearningConnector)'
+2025-06-24 23:28:22.330 +07:00 [INF] Route matched with {action = "Post", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(ElearningConnector.Models.Common.AuthRequest) on controller AuthController (ElearningConnector).
+2025-06-24 23:28:22.752 +07:00 [INF] Executing OkObjectResult, writing value of type 'ElearningConnector.Models.Common.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-24 23:28:22.757 +07:00 [INF] Executed action AuthController.Post (ElearningConnector) in 423.1637ms
+2025-06-24 23:28:22.757 +07:00 [INF] Executed endpoint 'AuthController.Post (ElearningConnector)'
+2025-06-24 23:28:22.757 +07:00 [INF] 
+--- RESPONSE ---
+Time: 2025-06-24 23:28:22
+StatusCode: 200
+Body: {"code":"0001","message":"Lỗi hệ thống","result":null}
+-----------------
+
+2025-06-24 23:28:22.757 +07:00 [INF] HTTP POST /api/authen responded 200 in 532.0918 ms
+2025-06-24 23:28:22.759 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7072/api/authen - 200 null application/json; charset=utf-8 535.7849ms
+2025-06-24 23:31:02.925 +07:00 [INF] User profile is available. Using 'C:\Users\thanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-24 23:31:03.296 +07:00 [INF] Now listening on: https://localhost:7072
+2025-06-24 23:31:03.448 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-24 23:31:03.448 +07:00 [INF] Hosting environment: Development
+2025-06-24 23:31:03.448 +07:00 [INF] Content root path: C:\Users\thanh\source\repos\ElearningConnector\ElearningConnector
+2025-06-24 23:31:04.622 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/index.html - null null
+2025-06-24 23:31:04.838 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 65.5643 ms
+2025-06-24 23:31:04.843 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/index.html - 200 null text/html;charset=utf-8 227.1362ms
+2025-06-24 23:31:04.868 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/index.js - null null
+2025-06-24 23:31:04.868 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/_vs/browserLink - null null
+2025-06-24 23:31:04.868 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-24 23:31:04.872 +07:00 [INF] HTTP GET /swagger/index.js responded 200 in 3.3504 ms
+2025-06-24 23:31:04.873 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/index.js - 200 null application/javascript;charset=utf-8 4.8886ms
+2025-06-24 23:31:04.894 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/_framework/aspnetcore-browser-refresh.js - 200 13788 application/javascript; charset=utf-8 26.1028ms
+2025-06-24 23:31:04.921 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/_vs/browserLink - 200 null text/javascript; charset=UTF-8 52.6844ms
+2025-06-24 23:31:05.004 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/v1/swagger.json - null null
+2025-06-24 23:31:05.013 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 9.1690 ms
+2025-06-24 23:31:05.014 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.1083ms
+2025-06-24 23:31:08.290 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7072/api/authen - application/json 50
+2025-06-24 23:31:12.165 +07:00 [INF] 
+--- REQUEST ---
+Time: 2025-06-24 23:31:12
+Method: POST
+Path: /api/authen
+Body: {
+  "userName": "string",
+  "passWord": "string"
+}
+
+2025-06-24 23:31:12.317 +07:00 [INF] Executing endpoint 'AuthController.Post (ElearningConnector)'
+2025-06-24 23:31:12.365 +07:00 [INF] Route matched with {action = "Post", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(ElearningConnector.Models.Common.AuthRequest) on controller AuthController (ElearningConnector).
+2025-06-24 23:33:04.298 +07:00 [INF] User profile is available. Using 'C:\Users\thanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-24 23:33:04.685 +07:00 [INF] Now listening on: https://localhost:7072
+2025-06-24 23:33:04.850 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-24 23:33:04.850 +07:00 [INF] Hosting environment: Development
+2025-06-24 23:33:04.850 +07:00 [INF] Content root path: C:\Users\thanh\source\repos\ElearningConnector\ElearningConnector
+2025-06-24 23:33:05.909 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/index.html - null null
+2025-06-24 23:33:06.129 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 59.0139 ms
+2025-06-24 23:33:06.134 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/index.html - 200 null text/html;charset=utf-8 234.1118ms
+2025-06-24 23:33:06.164 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-24 23:33:06.164 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/index.js - null null
+2025-06-24 23:33:06.164 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/_vs/browserLink - null null
+2025-06-24 23:33:06.168 +07:00 [INF] HTTP GET /swagger/index.js responded 200 in 2.5022 ms
+2025-06-24 23:33:06.169 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/index.js - 200 null application/javascript;charset=utf-8 4.3897ms
+2025-06-24 23:33:06.182 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/_framework/aspnetcore-browser-refresh.js - 200 13788 application/javascript; charset=utf-8 18.2626ms
+2025-06-24 23:33:06.213 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/_vs/browserLink - 200 null text/javascript; charset=UTF-8 49.267ms
+2025-06-24 23:33:06.302 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/v1/swagger.json - null null
+2025-06-24 23:33:06.314 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 11.2598 ms
+2025-06-24 23:33:06.314 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.4856ms
+2025-06-24 23:34:36.735 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7072/api/authen - application/json 50
+2025-06-24 23:34:36.800 +07:00 [INF] 
+--- REQUEST ---
+Time: 2025-06-24 23:34:36
+Method: POST
+Path: /api/authen
+Body: {
+  "userName": "string",
+  "passWord": "string"
+}
+
+2025-06-24 23:34:36.909 +07:00 [INF] Executing endpoint 'AuthController.Post (ElearningConnector)'
+2025-06-24 23:34:36.936 +07:00 [INF] Route matched with {action = "Post", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(ElearningConnector.Models.Common.AuthRequest) on controller AuthController (ElearningConnector).
+2025-06-24 23:35:04.732 +07:00 [INF] User profile is available. Using 'C:\Users\thanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-24 23:35:05.099 +07:00 [INF] Now listening on: https://localhost:7072
+2025-06-24 23:35:05.185 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-24 23:35:05.185 +07:00 [INF] Hosting environment: Development
+2025-06-24 23:35:05.185 +07:00 [INF] Content root path: C:\Users\thanh\source\repos\ElearningConnector\ElearningConnector
+2025-06-24 23:35:06.240 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/index.html - null null
+2025-06-24 23:35:06.442 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 66.0559 ms
+2025-06-24 23:35:06.448 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/index.html - 200 null text/html;charset=utf-8 212.4697ms
+2025-06-24 23:35:06.467 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-24 23:35:06.467 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/_vs/browserLink - null null
+2025-06-24 23:35:06.467 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/index.js - null null
+2025-06-24 23:35:06.471 +07:00 [INF] HTTP GET /swagger/index.js responded 200 in 3.7194 ms
+2025-06-24 23:35:06.472 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/index.js - 200 null application/javascript;charset=utf-8 5.4951ms
+2025-06-24 23:35:06.498 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/_framework/aspnetcore-browser-refresh.js - 200 13788 application/javascript; charset=utf-8 31.2921ms
+2025-06-24 23:35:06.538 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/_vs/browserLink - 200 null text/javascript; charset=UTF-8 71.7113ms
+2025-06-24 23:35:06.627 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/v1/swagger.json - null null
+2025-06-24 23:35:06.638 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 10.1686 ms
+2025-06-24 23:35:06.638 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.2356ms
+2025-06-24 23:35:11.502 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7072/api/authen - application/json 50
+2025-06-24 23:35:11.523 +07:00 [INF] 
+--- REQUEST ---
+Time: 2025-06-24 23:35:11
+Method: POST
+Path: /api/authen
+Body: {
+  "userName": "string",
+  "passWord": "string"
+}
+
+2025-06-24 23:35:11.622 +07:00 [INF] Executing endpoint 'AuthController.Post (ElearningConnector)'
+2025-06-24 23:35:11.639 +07:00 [INF] Route matched with {action = "Post", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(ElearningConnector.Models.Common.AuthRequest) on controller AuthController (ElearningConnector).
+2025-06-24 23:35:21.492 +07:00 [INF] Executed DbCommand (142ms) [Parameters=[@__8__locals1_request_UserName_0='?' (Size = 4000), @__hashedPassword_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[PK_UserID], [u].[FullName], [u].[Password], [u].[UserName], [u].[UserType], [u].[isOnline]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__8__locals1_request_UserName_0 AND [u].[Password] = @__hashedPassword_1
+2025-06-24 23:35:21.517 +07:00 [INF] Executing OkObjectResult, writing value of type 'ElearningConnector.Models.Common.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-24 23:35:21.523 +07:00 [INF] Executed action AuthController.Post (ElearningConnector) in 9881.9605ms
+2025-06-24 23:35:21.524 +07:00 [INF] Executed endpoint 'AuthController.Post (ElearningConnector)'
+2025-06-24 23:35:21.524 +07:00 [INF] 
+--- RESPONSE ---
+Time: 2025-06-24 23:35:21
+StatusCode: 200
+Body: {"code":"0002","message":"Tài khoản hoặc mật khẩu không chính xác","result":null}
+-----------------
+
+2025-06-24 23:35:21.526 +07:00 [INF] HTTP POST /api/authen responded 200 in 10020.4838 ms
+2025-06-24 23:35:21.535 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7072/api/authen - 200 null application/json; charset=utf-8 10033.8882ms
+2025-06-24 23:35:44.072 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7072/api/authen - application/json 56
+2025-06-24 23:35:44.078 +07:00 [INF] 
+--- REQUEST ---
+Time: 2025-06-24 23:35:44
+Method: POST
+Path: /api/authen
+Body: {
+  "userName": "phuongloan",
+  "passWord": "thanh123"
+}
+
+2025-06-24 23:35:44.079 +07:00 [INF] Executing endpoint 'AuthController.Post (ElearningConnector)'
+2025-06-24 23:35:44.080 +07:00 [INF] Route matched with {action = "Post", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(ElearningConnector.Models.Common.AuthRequest) on controller AuthController (ElearningConnector).
+2025-06-24 23:35:46.878 +07:00 [INF] Executed DbCommand (25ms) [Parameters=[@__8__locals1_request_UserName_0='?' (Size = 4000), @__hashedPassword_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[PK_UserID], [u].[FullName], [u].[Password], [u].[UserName], [u].[UserType], [u].[isOnline]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__8__locals1_request_UserName_0 AND [u].[Password] = @__hashedPassword_1
+2025-06-24 23:35:46.921 +07:00 [ERR] An exception occurred while iterating over the results of a query for context type 'ElearningConnector.Data.ApplicationDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Boolean()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetBoolean(Int32 i)
+   at lambda_method14(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Boolean()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetBoolean(Int32 i)
+   at lambda_method14(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-06-24 23:35:46.971 +07:00 [INF] Executing OkObjectResult, writing value of type 'ElearningConnector.Models.Common.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-24 23:35:46.971 +07:00 [INF] Executed action AuthController.Post (ElearningConnector) in 2891.1912ms
+2025-06-24 23:35:46.971 +07:00 [INF] Executed endpoint 'AuthController.Post (ElearningConnector)'
+2025-06-24 23:35:46.971 +07:00 [INF] 
+--- RESPONSE ---
+Time: 2025-06-24 23:35:46
+StatusCode: 200
+Body: {"code":"0001","message":"Lỗi hệ thống","result":null}
+-----------------
+
+2025-06-24 23:35:46.971 +07:00 [INF] HTTP POST /api/authen responded 200 in 2893.6306 ms
+2025-06-24 23:35:46.972 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7072/api/authen - 200 null application/json; charset=utf-8 2900.452ms
+2025-06-24 23:36:00.190 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7072/api/authen - application/json 56
+2025-06-24 23:36:00.191 +07:00 [INF] 
+--- REQUEST ---
+Time: 2025-06-24 23:36:00
+Method: POST
+Path: /api/authen
+Body: {
+  "userName": "phuongloan",
+  "passWord": "thanh123"
+}
+
+2025-06-24 23:36:00.193 +07:00 [INF] Executing endpoint 'AuthController.Post (ElearningConnector)'
+2025-06-24 23:36:00.193 +07:00 [INF] Route matched with {action = "Post", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(ElearningConnector.Models.Common.AuthRequest) on controller AuthController (ElearningConnector).
+2025-06-24 23:36:05.046 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[@__8__locals1_request_UserName_0='?' (Size = 4000), @__hashedPassword_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[PK_UserID], [u].[FullName], [u].[Password], [u].[UserName], [u].[UserType], [u].[isOnline]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__8__locals1_request_UserName_0 AND [u].[Password] = @__hashedPassword_1
+2025-06-24 23:36:05.067 +07:00 [ERR] An exception occurred while iterating over the results of a query for context type 'ElearningConnector.Data.ApplicationDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Boolean()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetBoolean(Int32 i)
+   at lambda_method14(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Boolean()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetBoolean(Int32 i)
+   at lambda_method14(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-06-24 23:36:40.542 +07:00 [INF] Executing OkObjectResult, writing value of type 'ElearningConnector.Models.Common.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-24 23:36:40.545 +07:00 [INF] Executed action AuthController.Post (ElearningConnector) in 40352.2968ms
+2025-06-24 23:36:40.548 +07:00 [INF] Executed endpoint 'AuthController.Post (ElearningConnector)'
+2025-06-24 23:36:40.548 +07:00 [INF] 
+--- RESPONSE ---
+Time: 2025-06-24 23:36:40
+StatusCode: 200
+Body: {"code":"0001","message":"Lỗi hệ thống","result":null}
+-----------------
+
+2025-06-24 23:36:40.548 +07:00 [INF] HTTP POST /api/authen responded 200 in 40357.8453 ms
+2025-06-24 23:36:40.552 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7072/api/authen - 200 null application/json; charset=utf-8 40362.0027ms
+2025-06-24 23:36:42.806 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7072/api/authen - application/json 56
+2025-06-24 23:36:42.806 +07:00 [INF] 
+--- REQUEST ---
+Time: 2025-06-24 23:36:42
+Method: POST
+Path: /api/authen
+Body: {
+  "userName": "phuongloan",
+  "passWord": "thanh123"
+}
+
+2025-06-24 23:36:42.806 +07:00 [INF] Executing endpoint 'AuthController.Post (ElearningConnector)'
+2025-06-24 23:36:42.807 +07:00 [INF] Route matched with {action = "Post", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(ElearningConnector.Models.Common.AuthRequest) on controller AuthController (ElearningConnector).
+2025-06-24 23:36:48.685 +07:00 [INF] Executed DbCommand (54ms) [Parameters=[@__8__locals1_request_UserName_0='?' (Size = 4000), @__hashedPassword_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[PK_UserID], [u].[FullName], [u].[Password], [u].[UserName], [u].[UserType], [u].[isOnline]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__8__locals1_request_UserName_0 AND [u].[Password] = @__hashedPassword_1
+2025-06-24 23:36:48.686 +07:00 [ERR] An exception occurred while iterating over the results of a query for context type 'ElearningConnector.Data.ApplicationDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Boolean()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetBoolean(Int32 i)
+   at lambda_method14(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Boolean()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetBoolean(Int32 i)
+   at lambda_method14(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-06-24 23:39:19.032 +07:00 [INF] User profile is available. Using 'C:\Users\thanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-24 23:39:19.440 +07:00 [INF] Now listening on: https://localhost:7072
+2025-06-24 23:39:19.764 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-24 23:39:19.765 +07:00 [INF] Hosting environment: Development
+2025-06-24 23:39:19.765 +07:00 [INF] Content root path: C:\Users\thanh\source\repos\ElearningConnector\ElearningConnector
+2025-06-24 23:39:20.324 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/index.html - null null
+2025-06-24 23:39:20.531 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 56.8088 ms
+2025-06-24 23:39:20.536 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/index.html - 200 null text/html;charset=utf-8 218.3204ms
+2025-06-24 23:39:20.562 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-24 23:39:20.562 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/_vs/browserLink - null null
+2025-06-24 23:39:20.562 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/index.js - null null
+2025-06-24 23:39:20.579 +07:00 [INF] HTTP GET /swagger/index.js responded 200 in 6.8150 ms
+2025-06-24 23:39:20.579 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/index.js - 200 null application/javascript;charset=utf-8 17.7948ms
+2025-06-24 23:39:20.616 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/_framework/aspnetcore-browser-refresh.js - 200 13788 application/javascript; charset=utf-8 54.3451ms
+2025-06-24 23:39:20.645 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/_vs/browserLink - 200 null text/javascript; charset=UTF-8 82.7369ms
+2025-06-24 23:39:20.723 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/v1/swagger.json - null null
+2025-06-24 23:39:20.732 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 8.7758 ms
+2025-06-24 23:39:20.733 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.6342ms
+2025-06-24 23:39:24.291 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7072/api/authen - application/json 50
+2025-06-24 23:39:24.357 +07:00 [INF] 
+--- REQUEST ---
+Time: 2025-06-24 23:39:24
+Method: POST
+Path: /api/authen
+Body: {
+  "userName": "string",
+  "passWord": "string"
+}
+
+2025-06-24 23:39:24.485 +07:00 [INF] Executing endpoint 'AuthController.Post (ElearningConnector)'
+2025-06-24 23:39:24.508 +07:00 [INF] Route matched with {action = "Post", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(ElearningConnector.Models.Common.AuthRequest) on controller AuthController (ElearningConnector).
+2025-06-24 23:39:27.537 +07:00 [INF] Executed DbCommand (75ms) [Parameters=[@__8__locals1_request_UserName_0='?' (Size = 4000), @__hashedPassword_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[PK_UserID], [u].[FullName], [u].[Password], [u].[UserName], [u].[UserType], [u].[isOnline]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__8__locals1_request_UserName_0 AND [u].[Password] = @__hashedPassword_1
+2025-06-24 23:39:27.565 +07:00 [INF] Executing OkObjectResult, writing value of type 'ElearningConnector.Models.Common.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-24 23:39:27.571 +07:00 [INF] Executed action AuthController.Post (ElearningConnector) in 3060.2595ms
+2025-06-24 23:39:27.572 +07:00 [INF] Executed endpoint 'AuthController.Post (ElearningConnector)'
+2025-06-24 23:39:27.573 +07:00 [INF] 
+--- RESPONSE ---
+Time: 2025-06-24 23:39:27
+StatusCode: 200
+Body: {"code":"0002","message":"Tài khoản hoặc mật khẩu không chính xác","result":null}
+-----------------
+
+2025-06-24 23:39:27.574 +07:00 [INF] HTTP POST /api/authen responded 200 in 3278.6759 ms
+2025-06-24 23:39:27.580 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7072/api/authen - 200 null application/json; charset=utf-8 3289.8639ms
+2025-06-24 23:39:40.077 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7072/api/authen - application/json 56
+2025-06-24 23:39:40.079 +07:00 [INF] 
+--- REQUEST ---
+Time: 2025-06-24 23:39:40
+Method: POST
+Path: /api/authen
+Body: {
+  "userName": "phuongloan",
+  "passWord": "thanh123"
+}
+
+2025-06-24 23:39:40.080 +07:00 [INF] Executing endpoint 'AuthController.Post (ElearningConnector)'
+2025-06-24 23:39:40.081 +07:00 [INF] Route matched with {action = "Post", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(ElearningConnector.Models.Common.AuthRequest) on controller AuthController (ElearningConnector).
+2025-06-24 23:39:41.852 +07:00 [INF] Executed DbCommand (5ms) [Parameters=[@__8__locals1_request_UserName_0='?' (Size = 4000), @__hashedPassword_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[PK_UserID], [u].[FullName], [u].[Password], [u].[UserName], [u].[UserType], [u].[isOnline]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__8__locals1_request_UserName_0 AND [u].[Password] = @__hashedPassword_1
+2025-06-24 23:39:41.975 +07:00 [INF] Executing OkObjectResult, writing value of type 'ElearningConnector.Models.Common.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-24 23:39:41.975 +07:00 [INF] Executed action AuthController.Post (ElearningConnector) in 1894.3916ms
+2025-06-24 23:39:41.975 +07:00 [INF] Executed endpoint 'AuthController.Post (ElearningConnector)'
+2025-06-24 23:39:41.975 +07:00 [INF] 
+--- RESPONSE ---
+Time: 2025-06-24 23:39:41
+StatusCode: 200
+Body: {"code":"0001","message":"Lỗi hệ thống","result":null}
+-----------------
+
+2025-06-24 23:39:41.976 +07:00 [INF] HTTP POST /api/authen responded 200 in 1897.0631 ms
+2025-06-24 23:39:41.976 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7072/api/authen - 200 null application/json; charset=utf-8 1899.4389ms
+2025-06-24 23:39:46.218 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7072/api/authen - application/json 56
+2025-06-24 23:39:46.219 +07:00 [INF] 
+--- REQUEST ---
+Time: 2025-06-24 23:39:46
+Method: POST
+Path: /api/authen
+Body: {
+  "userName": "phuongloan",
+  "passWord": "thanh123"
+}
+
+2025-06-24 23:39:46.222 +07:00 [INF] Executing endpoint 'AuthController.Post (ElearningConnector)'
+2025-06-24 23:39:46.222 +07:00 [INF] Route matched with {action = "Post", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(ElearningConnector.Models.Common.AuthRequest) on controller AuthController (ElearningConnector).
+2025-06-24 23:39:51.989 +07:00 [INF] Executed DbCommand (4ms) [Parameters=[@__8__locals1_request_UserName_0='?' (Size = 4000), @__hashedPassword_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[PK_UserID], [u].[FullName], [u].[Password], [u].[UserName], [u].[UserType], [u].[isOnline]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__8__locals1_request_UserName_0 AND [u].[Password] = @__hashedPassword_1
+2025-06-24 23:51:59.998 +07:00 [INF] User profile is available. Using 'C:\Users\thanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-24 23:52:00.364 +07:00 [INF] Now listening on: https://localhost:7072
+2025-06-24 23:52:00.415 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-24 23:52:00.416 +07:00 [INF] Hosting environment: Development
+2025-06-24 23:52:00.416 +07:00 [INF] Content root path: C:\Users\thanh\source\repos\ElearningConnector\ElearningConnector
+2025-06-24 23:52:01.311 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/index.html - null null
+2025-06-24 23:52:01.524 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 55.8845 ms
+2025-06-24 23:52:01.530 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/index.html - 200 null text/html;charset=utf-8 229.0806ms
+2025-06-24 23:52:01.548 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/index.js - null null
+2025-06-24 23:52:01.548 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/_vs/browserLink - null null
+2025-06-24 23:52:01.548 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-24 23:52:01.552 +07:00 [INF] HTTP GET /swagger/index.js responded 200 in 3.5097 ms
+2025-06-24 23:52:01.553 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/index.js - 200 null application/javascript;charset=utf-8 5.6041ms
+2025-06-24 23:52:01.580 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/_framework/aspnetcore-browser-refresh.js - 200 13788 application/javascript; charset=utf-8 32.6996ms
+2025-06-24 23:52:01.624 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/_vs/browserLink - 200 null text/javascript; charset=UTF-8 76.5993ms
+2025-06-24 23:52:01.699 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/v1/swagger.json - null null
+2025-06-24 23:52:01.708 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 8.0220 ms
+2025-06-24 23:52:01.708 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.1459ms
+2025-06-24 23:52:06.775 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7072/api/authen - application/json 50
+2025-06-24 23:52:06.821 +07:00 [INF] 
+--- REQUEST ---
+Time: 2025-06-24 23:52:06
+Method: POST
+Path: /api/authen
+Body: {
+  "userName": "string",
+  "passWord": "string"
+}
+
+2025-06-24 23:52:06.929 +07:00 [INF] Executing endpoint 'AuthController.Post (ElearningConnector)'
+2025-06-24 23:52:06.959 +07:00 [INF] Route matched with {action = "Post", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(ElearningConnector.Models.Common.AuthRequest) on controller AuthController (ElearningConnector).
+2025-06-24 23:52:10.427 +07:00 [INF] Executed DbCommand (89ms) [Parameters=[@__8__locals1_request_UserName_0='?' (Size = 4000), @__hashedPassword_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[PK_UserID], [u].[FullName], [u].[Password], [u].[UserName], [u].[UserType], [u].[isOnline]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__8__locals1_request_UserName_0 AND [u].[Password] = @__hashedPassword_1
+2025-06-24 23:52:10.460 +07:00 [INF] Executing OkObjectResult, writing value of type 'ElearningConnector.Models.Common.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-24 23:52:10.466 +07:00 [INF] Executed action AuthController.Post (ElearningConnector) in 3503.6238ms
+2025-06-24 23:52:10.466 +07:00 [INF] Executed endpoint 'AuthController.Post (ElearningConnector)'
+2025-06-24 23:52:10.467 +07:00 [INF] 
+--- RESPONSE ---
+Time: 2025-06-24 23:52:10
+StatusCode: 200
+Body: {"code":"0002","message":"Tài khoản hoặc mật khẩu không chính xác","result":null}
+-----------------
+
+2025-06-24 23:52:10.468 +07:00 [INF] HTTP POST /api/authen responded 200 in 3687.6781 ms
+2025-06-24 23:52:10.476 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7072/api/authen - 200 null application/json; charset=utf-8 3701.5296ms
+2025-06-24 23:52:20.200 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7072/api/authen - application/json 56
+2025-06-24 23:52:20.201 +07:00 [INF] 
+--- REQUEST ---
+Time: 2025-06-24 23:52:20
+Method: POST
+Path: /api/authen
+Body: {
+  "userName": "phuongloan",
+  "passWord": "thanh123"
+}
+
+2025-06-24 23:52:20.204 +07:00 [INF] Executing endpoint 'AuthController.Post (ElearningConnector)'
+2025-06-24 23:52:20.205 +07:00 [INF] Route matched with {action = "Post", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(ElearningConnector.Models.Common.AuthRequest) on controller AuthController (ElearningConnector).
+2025-06-24 23:52:27.478 +07:00 [INF] Executed DbCommand (19ms) [Parameters=[@__8__locals1_request_UserName_0='?' (Size = 4000), @__hashedPassword_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[PK_UserID], [u].[FullName], [u].[Password], [u].[UserName], [u].[UserType], [u].[isOnline]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__8__locals1_request_UserName_0 AND [u].[Password] = @__hashedPassword_1
+2025-06-24 23:52:37.937 +07:00 [INF] Executing OkObjectResult, writing value of type 'ElearningConnector.Models.Common.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-24 23:52:40.580 +07:00 [INF] Executed action AuthController.Post (ElearningConnector) in 20375.0324ms
+2025-06-24 23:52:40.580 +07:00 [INF] Executed endpoint 'AuthController.Post (ElearningConnector)'
+2025-06-24 23:52:44.764 +07:00 [INF] 
+--- RESPONSE ---
+Time: 2025-06-24 23:52:44
+StatusCode: 200
+Body: {"code":"0000","message":"Đăng nhập thành công","result":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoicGh1b25nbG9hbiIsIlVzZXJJZCI6IjgiLCJVc2VyVHlwZSI6IjEiLCJleHAiOjE3NTA3OTExNTIsImlzcyI6IkVsZWFybmluZ0Nvbm5lY3RvciIsImF1ZCI6IkVsZWFybmluZ0Nvbm5lY3RvclVzZXJzIn0.L4JExSMPauIXCJ6DFkNhpxrF9F2IPrwD4fIBJrtLhGk"}
+-----------------
+
+2025-06-24 23:52:46.027 +07:00 [INF] HTTP POST /api/authen responded 200 in 25826.0382 ms
+2025-06-24 23:52:46.028 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7072/api/authen - 200 null application/json; charset=utf-8 25828.3371ms
+2025-06-24 23:55:35.129 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7072/api/danhsachcanbo - application/json 50
+2025-06-24 23:55:35.130 +07:00 [INF] 
+--- REQUEST ---
+Time: 2025-06-24 23:55:35
+Method: POST
+Path: /api/danhsachcanbo
+Body: {
+  "page": 1,
+  "pageSize": 1,
+  "keywords": ""
+}
+
+2025-06-24 23:55:35.138 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-24 23:55:35.142 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-06-24 23:55:35.142 +07:00 [INF] 
+--- RESPONSE ---
+Time: 2025-06-24 23:55:35
+StatusCode: 401
+Body: 
+-----------------
+
+2025-06-24 23:55:35.142 +07:00 [INF] HTTP POST /api/danhsachcanbo responded 401 in 12.5471 ms
+2025-06-24 23:55:35.142 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7072/api/danhsachcanbo - 401 0 null 13.6613ms
+2025-06-24 23:56:19.363 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7072/api/danhsachcanbo - application/json 50
+2025-06-24 23:56:19.365 +07:00 [INF] 
+--- REQUEST ---
+Time: 2025-06-24 23:56:19
+Method: POST
+Path: /api/danhsachcanbo
+Body: {
+  "page": 1,
+  "pageSize": 1,
+  "keywords": ""
+}
+
+2025-06-24 23:56:19.373 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-24 23:56:19.373 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-06-24 23:56:19.374 +07:00 [INF] 
+--- RESPONSE ---
+Time: 2025-06-24 23:56:19
+StatusCode: 401
+Body: 
+-----------------
+
+2025-06-24 23:56:19.374 +07:00 [INF] HTTP POST /api/danhsachcanbo responded 401 in 10.0858 ms
+2025-06-24 23:56:19.374 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7072/api/danhsachcanbo - 401 0 null 11.3096ms
+2025-06-24 23:57:21.077 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7072/api/danhsachcanbo - null 0
+2025-06-24 23:57:21.079 +07:00 [INF] 
+--- REQUEST ---
+Time: 2025-06-24 23:57:21
+Method: POST
+Path: /api/danhsachcanbo
+Body: 
+
+2025-06-24 23:57:21.246 +07:00 [INF] Executing endpoint 'CanBoController.Post (ElearningConnector)'
+2025-06-24 23:57:21.293 +07:00 [INF] Route matched with {action = "Post", controller = "CanBo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(ElearningConnector.Models.Requests.PagedRequest) on controller CanBoController (ElearningConnector).
+2025-06-24 23:57:21.332 +07:00 [INF] Executing StatusCodeResult, setting HTTP status code 415
+2025-06-24 23:57:21.332 +07:00 [INF] Executed action CanBoController.Post (ElearningConnector) in 39.7378ms
+2025-06-24 23:57:21.332 +07:00 [INF] Executed endpoint 'CanBoController.Post (ElearningConnector)'
+2025-06-24 23:57:21.333 +07:00 [INF] 
+--- RESPONSE ---
+Time: 2025-06-24 23:57:21
+StatusCode: 415
+Body: 
+-----------------
+
+2025-06-24 23:57:21.333 +07:00 [INF] HTTP POST /api/danhsachcanbo responded 415 in 255.3667 ms
+2025-06-24 23:57:21.339 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7072/api/danhsachcanbo - 415 0 null 262.7558ms

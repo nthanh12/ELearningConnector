@@ -1,0 +1,82 @@
+[
+  {
+    "ContainingType": "AuthController",
+    "Method": "Post",
+    "RelativePath": "api/authen",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ElearningConnector.Models.Common.AuthRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChucVuController",
+    "Method": "Post",
+    "RelativePath": "api/chucvu",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ElearningConnector.Models.Requests.PagedRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CanBoController",
+    "Method": "Post",
+    "RelativePath": "api/danhsachcanbo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ElearningConnector.Models.Requests.PagedRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ElearningConnector.Controllers.NhanVienLogController",
+    "Method": "HasChange",
+    "RelativePath": "api/nhanvien/haschange",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "since",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PhongBanController",
+    "Method": "Post",
+    "RelativePath": "api/phongban",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ElearningConnector.Models.Requests.PagedRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
